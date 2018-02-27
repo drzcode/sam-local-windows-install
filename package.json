@@ -1,11 +1,11 @@
 {
-  "name": "sam_local",
+  "name": "sam-local-windows-install",
   "version": "1.0.0",
-  "description": "SAM Local Hello World",
+  "description": "SAM Local Hello World Sample",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "sam local invoke -e event.json"
   },
   "author": "Gary A. Stafford",
-  "license": "ISC"
+  "license": "Apache-2.0"
 }

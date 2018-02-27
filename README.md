@@ -1,6 +1,6 @@
 # SAM Local Installation
 
-Install SAM Local on Windows, and test with a simple Lambda function.
+Install SAM Local on Windows 10 Enterprise. Test SAM Local with a simple Lambda function.
 
 According to [AWS](https://github.com/awslabs/aws-sam-local#sam-local-beta), '_sam is the AWS CLI tool for managing Serverless applications written with AWS Serverless Application Model (SAM). SAM Local can be used to test functions locally, start a local API Gateway from a SAM template, validate a SAM template, and generate sample payloads for various event sources._'
 
@@ -15,13 +15,13 @@ You will need to close and logout.
 
 ![Docker](install_pics/SAM_Local_02.PNG)
 
-Windows will ask you to restart.
+Windows will ask you to restart to enable Hyper-V and Containers features.
 
 ![Docker](install_pics/SAM_Local_03.PNG)
 
 ## Install AWS SAM Local
 
-Install `aws-sam-local` npm package globally.
+Install `aws-sam-local` npm package globally. Assumes Node.js/npm already installed.
 
 ```javascript
 npm install -g aws-sam-local
@@ -30,7 +30,7 @@ sam --version
 
 ![Node](install_pics/SAM_Local_07.PNG)
 
-## Sample Lambda Function / API Gateway
+## Sample Lambda Function
 
 Sample taken from various AWS samples.
 
@@ -92,11 +92,11 @@ Resources:
 
 ### Invoke Lambda with an Event file
 
-To test SAM Local, execute: `sam local invoke -e event.json`.
+To test SAM Local, execute `npm test` or `sam local invoke -e event.json`.
 
 ![Node](install_pics/SAM_Local_08.PNG)
 
-The first time you run SAM local, you will need to share access to your drive.
+The first time you run SAM Local, you will need to share access to your C: drive.
 
 ![Docker](install_pics/SAM_Local_06.PNG)
 

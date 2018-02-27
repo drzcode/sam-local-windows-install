@@ -9,15 +9,15 @@ According to [AWS](https://github.com/awslabs/aws-sam-local#sam-local-beta), '_s
 Link: [Docker for Windows](https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows)<br>
 Choose the Stable or Edge version of Docker for Windows.
 
-![Docker](install_pics\SAM_Local_01.PNG)
+![Docker](install_pics/SAM_Local_01.PNG)
 
 You will need to close and logout.
 
-![Docker](install_pics\SAM_Local_02.PNG)
+![Docker](install_pics/SAM_Local_02.PNG)
 
 Windows will ask you to restart.
 
-![Docker](install_pics\SAM_Local_03.PNG)
+![Docker](install_pics/SAM_Local_03.PNG)
 
 ## Install AWS SAM Local
 
@@ -28,7 +28,7 @@ npm install -g aws-sam-local
 sam --version
 ```
 
-![Node](install_pics\SAM_Local_07.PNG)
+![Node](install_pics/SAM_Local_07.PNG)
 
 ## Sample Lambda Function / API Gateway
 
@@ -94,11 +94,11 @@ Resources:
 
 To test SAM Local, execute: `sam local invoke -e event.json`.
 
-![Node](install_pics\SAM_Local_08.PNG)
+![Node](install_pics/SAM_Local_08.PNG)
 
 The first time you run SAM local, you will need to share access to your drive.
 
-![Docker](install_pics\SAM_Local_06.PNG)
+![Docker](install_pics/SAM_Local_06.PNG)
 
 ## SAM Local References
 

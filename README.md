@@ -6,8 +6,7 @@ According to [AWS](https://github.com/awslabs/aws-sam-local#sam-local-beta), '_s
 
 ## Install Docker for Windows
 
-Link: [Docker for Windows](https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows)<br>
-Choose the Stable or Edge version of Docker for Windows.
+SAM Local requires Docker. Link to [Docker for Windows](https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows). Choose the Stable or Edge version of Docker for Windows.
 
 ![Docker](install_pics/SAM_Local_01.PNG)
 

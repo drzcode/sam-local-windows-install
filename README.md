@@ -31,7 +31,7 @@ sam --version
 
 ## Sample Lambda Function
 
-Sample taken from various AWS samples.
+Example is a combination of several public AWS samples.
 
 Lambda: `index.js`
 

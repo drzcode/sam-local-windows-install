@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: A starter AWS Lambda function.
+Resources:
+  helloworld:
+    Properties:
+      CodeUri: s3://sam-deployment-source/4ec1b4031d63aff370391e58d73a932b
+      Description: A starter AWS Lambda function.
+      Events:
+        Api:
+          Properties:
+            Method: get
+            Path: /test
+          Type: Api
+      Handler: index.handler
+      MemorySize: 128
+      Runtime: nodejs6.10
+      Timeout: 3
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31

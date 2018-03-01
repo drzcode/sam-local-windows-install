@@ -99,6 +99,26 @@ The first time you run SAM Local, you will need to share access to your C: drive
 
 ![Docker](install_pics/SAM_Local_06.PNG)
 
+## Deploy API to AWS
+
+Execute the two commands below to deploy of the Lambda function and associated API to AWS, using [SAM](https://docs.aws.amazon.com/lambda/latest/dg/serverless_app.html). Commands require you have sufficient privileges to AWS resources.
+
+These commands will create an S3 bucket (you will need to substitute a unique bucket name for the bucket), API, in the API Gateway, titled `test-api`, matching the CloudFormation stack name. The Lambda will also be created, titled similar to `test-stack-helloworld-1SOIAN9J9EUJS`. The Lambda function will be associated with the `GET` method of the `/test` API endpoint.
+
+```bash
+aws s3 mb s3://<unique_bucket_name>
+
+aws cloudformation package \
+  --template-file template.yaml \
+  --s3-bucket <unique_bucket_name> \
+  --output-template-file packaged-template.yaml
+
+aws cloudformation deploy \
+  --template-file packaged-template.yaml \
+  --stack-name test-api \
+  --capabilities CAPABILITY_IAM
+```
+
 ## SAM Local References
 
 - [SAM Local Requirements](https://docs.aws.amazon.com/lambda/latest/dg/sam-cli-requirements.html)
